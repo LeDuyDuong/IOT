@@ -334,7 +334,7 @@ CDiem::~CDiem(){
 
 
 int main(){
-    
+    //chao buoi sang
 }
 fjwdfnoweowdfcnjoiufcx
 
