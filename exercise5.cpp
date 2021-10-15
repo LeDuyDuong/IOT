@@ -267,8 +267,52 @@ CSoPhuc::~CSoPhuc(){
 }
 
 int main(){
-    
-}
+    CSoPhuc a,b,c,kq;
+    a.Nhap();
+    b.Nhap();
+    if(a>b)
+        cout<<" a lon hon b"<<endl;
+    if(a<b) 
+        cout<<" a nho hon b"<<endl;
+    if(a==b)
+        cout<<" a bang b"<<endl;
+    if(a!=b)
+        cout<<" a khac b"<<endl;
+    if(a>=b)
+        cout<<" a lon hon va bang b"<<endl;
+    if(a<=b)
+        cout<<" a nho hon va bang b"<<endl;
+    kq=a+b;
+    cout<<"\na+b: ";
+    kq.Xuat();
+    kq=a-b;
+    cout<<"\na-b: ";
+    kq.Xuat();
+    kq=a*b;
+    cout<<"\na*b: ";
+    kq.Xuat();
+    kq=a/b;
+    cout<<"\na/b: ";
+    kq.Xuat();
+    kq=(a+=2);
+    cout<<"\na+=2: ";
+    kq.Xuat();
+    kq=(a-=2);
+    cout<<"\na-=2: ";
+    kq.Xuat();
+    kq=(a*=2);
+    cout<<"\na*=2: ";
+    kq.Xuat();
+    kq=(a/=2);
+    cout<<"\na/=2: ";
+    kq.Xuat();
+    cout<<" "<<endl;
+    c=a;
+    c.Xuat();
+    cout<<" "<<endl;
+
+    return 0;
+}   
 
 
 
