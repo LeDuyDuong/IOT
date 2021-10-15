@@ -310,7 +310,6 @@ int main(){
     c=a;
     c.Xuat();
     cout<<" "<<endl;
-
     return 0;
 }   
 

@@ -234,5 +234,19 @@ CDonThuc::~CDonThuc(){
 }
 
 int main(){
-
-}
+    CDonThuc a,b;
+    a.Nhap();
+    b.Nhap();
+    if(a>b)
+        cout<<" a lon hon b"<<endl;
+    if(a<b) 
+        cout<<" a nho hon b"<<endl;
+    if(a==b)
+        cout<<" a bang b"<<endl;
+    if(a!=b)
+        cout<<" a khac b"<<endl;
+    if(a>=b)
+        cout<<" a lon hon va bang b"<<endl;
+    if(a<=b)
+        cout<<" a nho hon va bang b"<<endl;
+}   
