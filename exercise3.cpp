@@ -43,7 +43,7 @@ class CPhanSo {
     CPhanSo operator+=(int); // Toan tu cong don
     CPhanSo operator-=(int); // Toan tu tru don
     CPhanSo operator*=(int); // Toan tu nhan don
-    CPhanSo operator/=(int); // Toan tu chia don
+    CPhanSo operator/=(int); // Toan tu chia don 
     //Phuong thuc pha huy
     ~CPhanSo(); //Khoi tao phuong thuc pha huy
-}
+};
