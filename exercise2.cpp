@@ -62,4 +62,5 @@ class CDiemKhongGian {
     CDiemKhongGian DoiXungCao(); //Tim diem doi xung qua truc cao
     //Phuong thuc pha huy
     ~CDiemKhongGian(); //Khoi tao phuong thuc pha huy
-}
+};
+
