@@ -168,7 +168,13 @@ CDuongThang::~CDuongThang(){
 }
 
 int main(){
-    
-}
+    CDuongThang a,b;
+    a.Nhap();
+    b.Nhap();
+    if(a==b)
+        cout<<" a bang b"<<endl;
+    if(a!=b)
+        cout<<" a khac b"<<endl;
+}   
 
 
