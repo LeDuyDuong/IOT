@@ -334,10 +334,6 @@ CDiem::~CDiem(){
 
 
 int main(){
-    //chao buoi sang
+
 }
 
-
-// Viet Nam vo dich world cup, khong noi nhieu
-
-//dat be nho
