@@ -390,6 +390,13 @@ CDiemKhongGian::~CDiemKhongGian(){
 }
 
 int main(){
-    
+    CDiemKhongGian a,b;
+    a.Nhap();
+    b.Nhap();
+    if(a==b)
+    cout<<"Diem a va b giong nhau";
+    if(a!=b)
+    cout<<"Diem a va b khong giong nhau";
 }
+
 
