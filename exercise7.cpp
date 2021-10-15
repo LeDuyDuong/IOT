@@ -5,6 +5,7 @@ using namespace std;
 class CThoiGian {
     private:
     int gio, phut, giay;
+    public:
     //Phuong thuc khoi tao
     void KhoiTao(); //Phuong thuc khoi tao mac dinh
     void KhoiTao(float, float, float); //Phuong thuc khoi tao khi biet day du thong tinh

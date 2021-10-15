@@ -173,7 +173,7 @@ int CDiem::isKhongTrung(const CDiem&P){
 
 // Kiem tra diem co thuoc truc hoanh 
 int CDiem::ktThuocHoanh(){
-    if(y==0)
+    if(x==0)
        return 1;
     else 
        return 0;
@@ -181,7 +181,7 @@ int CDiem::ktThuocHoanh(){
 
 // Kiem tra diem co thuoc tung hoanh 
 int CDiem::ktThuocTung(){
-    if(x==0)
+    if(y==0)
        return 1;
     else 
        return 0;
@@ -334,12 +334,6 @@ CDiem::~CDiem(){
 
 
 int main(){
-    CDiem a,b,c;
-    a.Nhap();
-    b.Nhap();
-    if(a==b)
-    cout<<"Diem a va b trung nhau";
-    if(a!=b)
-    cout<<"Diem a va b khong trung nhau";
+    
 }
 
