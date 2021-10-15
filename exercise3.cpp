@@ -81,7 +81,7 @@ CPhanSo::CPhanSo(float ttu, float mmau){
 //Phuong thuc thiet lap sao chep
 CPhanSo::CPhanSo(const CPhanSo&P){
     tu=P.tu;
-    tu=P.mau;
+    mau=P.mau;
 }
 
 //Phuong thuc nhap

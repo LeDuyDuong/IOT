@@ -334,6 +334,12 @@ CDiem::~CDiem(){
 
 
 int main(){
-
+    CDiem a,b,c;
+    a.Nhap();
+    b.Nhap();
+    if(a==b)
+    cout<<"Diem a va b trung nhau";
+    if(a!=b)
+    cout<<"Diem a va b khong trung nhau";
 }
 
