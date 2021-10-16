@@ -154,6 +154,7 @@ float CDiemKhongGian::getZ(){
 CDiemKhongGian& CDiemKhongGian::operator=(const CDiemKhongGian&P){
     x=P.x;
     y=P.y;
+    z=P.z;
     return *this;
 }
 
@@ -165,6 +166,10 @@ void CDiemKhongGian::setX(float xx){
 //Phuong thuc cap nhat tung do
 void CDiemKhongGian::setY(float yy){
     y=yy;
+}
+
+void CDiemKhongGian::setZ(float zz){
+    z=zz;
 }
 
 //Kiem tra diem co trung goc toa do
@@ -390,13 +395,47 @@ CDiemKhongGian::~CDiemKhongGian(){
 }
 
 int main(){
-    CDiemKhongGian a,b;
+    CDiemKhongGian a,b,c,kq;
     a.Nhap();
     b.Nhap();
     if(a==b)
     cout<<"Diem a va b giong nhau";
     if(a!=b)
     cout<<"Diem a va b khong giong nhau";
+    if(a>b)
+    cout<<"Diem a xa goc toa do hon diem b "<<endl;
+    if(a<b)
+    cout<<"Diem a gan goc toa do hon diem b"<<endl;
+    if(a>=b)
+    cout<<"Diem a xa goc toa do hon diem b hoac bang voi diem b"<<endl;
+    if(a<=b)
+    cout<<"Diem a gan goc toa do hon diem b hoac bang voi diem b"<<endl;
+    cout<<"Toan tu gan ";
+    c=a;
+    c.Xuat();
+    cout<<" "<<endl;
+    CDiemKhongGian D1;
+    CDiemKhongGian D2(8,-9, 5);
+    CDiemKhongGian D3(D2);
+    cout<<"Thiet lap mac dinh "<<D1<<endl;
+    cout<<"Thiet lap khi biet day du thong tin "<<D2<<endl;
+    cout<<"Thiet lap sao chep "<<D3<<endl;
+    kq=a.DoiXungGoc();
+    cout<<"Diem doi xung goc ";
+    kq.Xuat();
+    cout<<" "<<endl;
+    kq=a.DoiXungTung();
+    cout<<"Diem doi xung truc tung ";
+    kq.Xuat();
+    cout<<" "<<endl;
+    kq=a.DoiXungHoanh();
+    cout<<"Diem doi xung truc hoanh ";
+    kq.Xuat();
+    cout<<" "<<endl;
+    kq=a.DoiXungCao();
+    cout<<"Diem doi xung truc cao ";
+    kq.Xuat();
+    cout<<" "<<endl;
 }
 
 
