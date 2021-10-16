@@ -168,13 +168,22 @@ CDuongThang::~CDuongThang(){
 }
 
 int main(){
-    CDuongThang a,b;
+    CDuongThang a,b,c;
     a.Nhap();
     b.Nhap();
     if(a==b)
         cout<<" a bang b"<<endl;
     if(a!=b)
         cout<<" a khac b"<<endl;
+    c=a;
+    c.Xuat();
+    cout<<" "<<endl;
+    CDuongThang DT1;
+    CDuongThang DT2(-9, 2);
+    CDuongThang DT3(DT2);
+    cout<<DT1<<endl;
+    cout<<DT2<<endl;
+    cout<<DT3<<endl;
 }   
 
 

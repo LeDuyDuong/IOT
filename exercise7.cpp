@@ -146,11 +146,20 @@ CThoiGian::~CThoiGian(){
     return;
 }
 int main(){
-    CThoiGian a,b;
+    CThoiGian a,b,c;
     a.Nhap();
     b.Nhap();
     if(a==b)
-    cout<<"a va b la cung mot gio";
+    cout<<"a va b la cung mot gio"<<endl;
     if(a!=b)
-    cout<<"a va b la hai gio khac nhau ";
+    cout<<"a va b la hai gio khac nhau "<<endl;
+    c=a;
+    c.Xuat();
+    cout<<" "<<endl;
+    CThoiGian TG1;
+    CThoiGian TG2(2, 3, 5);
+    CThoiGian TG3(TG2);
+    cout<<TG1<<endl;
+    cout<<TG2<<endl;
+    cout<<TG3<<endl;
 }

@@ -234,7 +234,7 @@ CDonThuc::~CDonThuc(){
 }
 
 int main(){
-    CDonThuc a,b;
+    CDonThuc a,b,c,kq;
     a.Nhap();
     b.Nhap();
     if(a>b)
@@ -249,4 +249,25 @@ int main(){
         cout<<" a lon hon va bang b"<<endl;
     if(a<=b)
         cout<<" a nho hon va bang b"<<endl;
+    kq=a*b;
+    cout<<"a*b: ";
+    kq.Xuat();
+    kq=a/b;
+    cout<<"a/b: ";
+    kq.Xuat();
+    kq=a*=5;
+    cout<<"a*=5: ";
+    kq.Xuat();
+    kq=a/=5;
+    cout<<"a/=5: ";
+    kq.Xuat();
+    c=a;
+    c.Xuat();
+    cout<<" "<<endl;
+    CDonThuc DT1;
+    CDonThuc DT2(-9, 2);
+    CDonThuc DT3(DT2);
+    cout<<DT1<<endl;
+    cout<<DT2<<endl;
+    cout<<DT3<<endl;
 }   

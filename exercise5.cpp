@@ -310,6 +310,12 @@ int main(){
     c=a;
     c.Xuat();
     cout<<" "<<endl;
+    CSoPhuc SP1;
+    CSoPhuc SP2(-9, 2);
+    CSoPhuc SP3(SP2);
+    cout<<SP1<<endl;
+    cout<<SP2<<endl;
+    cout<<SP3<<endl;
     return 0;
 }   
 

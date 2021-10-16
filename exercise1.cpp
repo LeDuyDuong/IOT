@@ -334,12 +334,50 @@ CDiem::~CDiem(){
 
 
 int main(){
-    CDiem a,b,c;
+    CDiem a,b,c,kq;
     a.Nhap();
     b.Nhap();
     if(a==b)
-    cout<<"Diem a va b trung nhau";
+    cout<<"Diem a va b trung nhau"<<endl;
     if(a!=b)
-    cout<<"Diem a va b khong trung nhau";
+    cout<<"Diem a va b khong trung nhau"<<endl;
+    if(a>b)
+    cout<<"Diem a xa goc toa do hon diem b "<<endl;
+    if(a<b)
+    cout<<"Diem a gan goc toa do hon diem b"<<endl;
+    if(a>=b)
+    cout<<"Diem a xa goc toa do hon diem b hoac bang voi diem b"<<endl;
+    if(a<=b)
+    cout<<"Diem a gan goc toa do hon diem b hoac bang voi diem b"<<endl;
+    cout<<"Toan tu gan ";
+    c=a;
+    c.Xuat();
+    cout<<" "<<endl;
+    CDiem D1;
+    CDiem D2(8,-9);
+    CDiem D3(D2);
+    cout<<"Thiet lap mac dinh "<<D1<<endl;
+    cout<<"Thiet lap khi biet day du thong tin "<<D2<<endl;
+    cout<<"Thiet lap sao chep "<<D3<<endl;
+    kq=a.DoiXungGoc();
+    cout<<"Diem doi xung goc ";
+    kq.Xuat();
+    cout<<" "<<endl;
+    kq=a.DoiXungTung();
+    cout<<"Diem doi xung truc tung ";
+    kq.Xuat();
+    cout<<" "<<endl;
+    kq=a.DoiXungHoanh();
+    cout<<"Diem doi xung truc hoanh ";
+    kq.Xuat();
+    cout<<" "<<endl;
+    kq=a.DoiXungPhanGiac1();
+    cout<<"Diem doi xung tia phan giac 1 ";
+    kq.Xuat();
+    cout<<" "<<endl;
+    kq=a.DoiXungPhanGiac2();
+    cout<<"Diem doi xung tia phan giac 2 ";
+    kq.Xuat();
+    cout<<" "<<endl;
 }
 

@@ -145,12 +145,21 @@ CNgay::~CNgay(){
     return;
 }
 int main(){
-    CNgay a,b;
+    CNgay a,b,c;
     a.Nhap();
     b.Nhap();
     if(a==b)
     cout<<"Hai ngay a va b la cung mot ngay";
     if(a!=b)
     cout<<"Hai ngay a va b la khac nhau ";
+    c=a;
+    c.Xuat();
+    cout<<" "<<endl;
+    CNgay N1;
+    CNgay N2(10,10,2021);
+    CNgay N3(N2);
+    cout<<N1<<endl;
+    cout<<N2<<endl;
+    cout<<N3<<endl;
 }
 
